@@ -1,38 +1,12 @@
-html, body{
-    width: 100%;
-    height: 100%;
-}
-
-a{
-    text-decoration: none;
-    text-align: center;
-    font-size: 95%;
-}
-
-.coluna{
-    display: flex;
-    flex-direction: column;
-}
-
-.linha{
-    display: flex;
-    flex-direction: row;
-}
-
-header{
+header {
     display: grid;
     align-items: center;
-    margin-bottom: 2rem;
+    height: 5%; 
+    width: 100%; 
+    padding: 2%; 
+    border-bottom: 3px solid black; 
+    flex-direction: row;
 }
-
-section{
-    align-items: center;
-}
-
-.meus{
-    border: none;
-}
-
 .menu{
     position: fixed;
 }
@@ -41,15 +15,44 @@ section{
     justify-self: center;
 }
 
-li{
+.retangulo {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: .1rem solid black;
-    border-radius: 0.3rem;
-    margin: 0.5rem 0 0.5rem 0;
-    text-wrap: balance;
-    overflow-wrap: break-word;
-    padding: 0.5rem 0 0.5rem 0;
+    height: 15%; 
+    width: 80%; 
+    margin: 2%;
+    padding: 2%; 
+    border: .2rem solid black;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+}
+.fonte_e_fundo {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    background-color: #dfe7ee; 
+}
+
+.mensagem_inicial {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.meus{
+    display: flex;
+    flex-direction: row;
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
