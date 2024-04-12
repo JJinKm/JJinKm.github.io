@@ -1,7 +1,34 @@
 .topo {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0%;
-border: 2px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 5%; 
+    width: 100%; 
+    padding: 2%; 
+    border: 3px solid black; 
+    flex-direction: row;
+}
+
+.retangulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%; 
+    width: 80%; 
+    margin: 2%;
+    padding: 2%; 
+    border: 3px solid black;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+}
+.fonte_e_fundo {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    background-color: #dfe7ee; 
+}
+
+.mensagem_inicial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
 }
