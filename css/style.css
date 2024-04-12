@@ -1,4 +1,4 @@
-html{
+html, body{
     height: 100%;
 }
 
@@ -12,33 +12,33 @@ html{
     flex-direction: row;
 }
 
-body{
+.titulo{
     font-family: 'Open Sans', sans-serif;
-    color: #000000;
-    background-color: #dfe7ee; 
+}
+
+.corpo{
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
-    display: grid;
+    display: flex;
     align-items: center;
+    justify-content: center;
     padding: .4rem; 
     border-bottom: .2rem solid black; 
-    flex-direction: row;
+    flex-direction: column;
 }
 .menu{
     position: fixed;
-}
-
-.logo{
-    justify-self: center;
+    align-self: flex-start;
 }
 
 li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: .4rem 0 .4rem 0;
-    padding: .4rem 0 .4rem 0; 
+    margin: .4rem 0.4rem .4rem 0.4rem;
+    padding: .4rem 0.4rem .4rem 0.4rem; 
     border: .2rem solid black;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
     border-radius: .4rem;
@@ -55,21 +55,40 @@ li {
 a{
     text-decoration: none;
     text-align: center;
+    font-size: 2rem;
+    color: black
 }
 
-.meus{
+li.meus{
+    width: 42%;
+    margin: .4rem 0 .4rem 0;
+}
+
+ul.meus{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.borderless{
     border: none;
     box-shadow: none;
+    padding: .4rem 0 .4rem 0
 }
 
 .opcoes{
-    height: 100%;
+    height: 60%;
 }
 
 footer{
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 0;
     text-align: center;
+    padding: 0 0 1.5rem 0;
+}
+
+.opcao{
+    height: 100%;
+    align-self: center;
 }
 
 section{
