@@ -1,10 +1,18 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    background-color: #dfe7ee; 
+}
+
 header {
     display: grid;
     align-items: center;
-    height: 5%; 
-    width: 100%; 
-    padding: 2%; 
-    border-bottom: 3px solid black; 
+    padding: .4rem; 
+    border-bottom: .2rem solid black; 
     flex-direction: row;
 }
 .menu{
@@ -19,17 +27,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15%; 
-    width: 80%; 
-    margin: 2%;
-    padding: 2%; 
+    margin: .4rem;
+    padding: .4rem; 
     border: .2rem solid black;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
-}
-.fonte_e_fundo {
-    font-family: 'Open Sans', sans-serif;
-    color: #000000;
-    background-color: #dfe7ee; 
+    border-radius: .4rem;
 }
 
 .mensagem_inicial {
@@ -50,7 +52,13 @@ a{
     flex-direction: row;
 }
 
-.opcoes{
+footer{
+    position: absolute;
+    bottom: 1.5rem;
+    text-align: center;
+}
+
+section{
     display: flex;
     flex-direction: column;
     justify-content: center;
