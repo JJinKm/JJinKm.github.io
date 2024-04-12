@@ -2,6 +2,16 @@ html{
     height: 100%;
 }
 
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.linha{
+    display: flex;
+    flex-direction: row;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     color: #000000;
@@ -23,12 +33,12 @@ header {
     justify-self: center;
 }
 
-.retangulo {
+li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: .4rem;
-    padding: .4rem; 
+    margin: .4rem 0 .4rem 0;
+    padding: .4rem 0 .4rem 0; 
     border: .2rem solid black;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
     border-radius: .4rem;
@@ -39,7 +49,7 @@ header {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    padding: 5%;
+    padding: .6rem;
 }
 
 a{
@@ -48,8 +58,12 @@ a{
 }
 
 .meus{
-    display: flex;
-    flex-direction: row;
+    border: none;
+    box-shadow: none;
+}
+
+.opcoes{
+    height: 100%;
 }
 
 footer{
