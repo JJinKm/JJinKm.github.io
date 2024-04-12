@@ -10,27 +10,32 @@
 </head>
 <body>
     <header>
-        <h1>Grupo 2</h1>
         <!-- menu sanduíche -->
-        <a href="tela_menu.html"><img src="img/menu.png" alt="Botão de menu" width="25" height="25"></a>
+        <a class="menu" href="tela_menu.html"><img src="img/menu.png" alt="Botão de menu" width="25" height="25"></a>
         <!-- Imagem -->
-        <img src="img/baixados.png" alt="Sua imagem" width="100" height="100">
+        <img class="logo" src="img/baixados.png" alt="Sua imagem" width="100" height="100">
     </header>
 
 
     <!-- Mensagem inicial -->
-    <section>
+    <section class="coluna">
         <h2>Bem-vindo ao Preparatório Pré-Vestibular!</h2>
         <p>Prepare-se para os vestibulares com os melhores cursos e professores qualificados.</p>
     </section>
 
     <!-- Partes do Links -->
-    <section>
+    <section class="coluna">
         <h2>Menu Inicial</h2>
-        <ul style="list-style-type: none; padding: 0;">
-            <li><a href="tela_plano_ensino.html">Plano de Ensino</a></li>
-            <li><a href="meus_feeedbacks.html">Meus Feedbacks</a></li>
-            <li><a href="meus_simulados.html">Meus Simulados</a></li>
+        <ul>
+            <li>
+                <a href="tela_plano_ensino.html">Plano de <br> Ensino</a>
+            </li>
+            <li class="meus">
+            <ul class="meus linha">
+                <li><a href="meus_feeedbacks.html">Meus <br> Feedbacks</a></li>
+                <li><a href="meus_simulados.html">Meus <br> Simulados</a></li>
+            </ul>
+            </li>
             <li><a href="metodologias.html">Metodologias</a></li>
             <li><a href="duvidas.html">Dúvidas</a></li>
         </ul>
