@@ -1,15 +1,5 @@
 html, body{
-    height: 100%;
-}
-
-.coluna{
-    display: flex;
-    flex-direction: column;
-}
-
-.linha{
-    display: flex;
-    flex-direction: row;
+    width: 100%;
 }
 
 .titulo{
@@ -17,39 +7,55 @@ html, body{
 }
 
 .corpo{
-    font-family: 'Open Sans', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
-header {
+header{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem; 
+    font-size: 2rem;
+    border-bottom: 0.1rem solid black;
+}
+
+header.inicio{
+    border: none;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: .4rem; 
-    border-bottom: .2rem solid black; 
-    flex-direction: column;
+    padding: 1rem; 
+    font-size: 2rem;
 }
+
+.user-inicio{
+    margin-top: 1rem;
+    width: 4rem;
+}
+
+.user{
+    width: 3rem;
+}
+
 .menu{
-    position: fixed;
-    align-self: flex-start;
+    width: 1.5rem;
+}
+
+.logo{
+    width: 20rem;
 }
 
 li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: .4rem 0.4rem .4rem 0.4rem;
-    padding: .4rem 0.4rem .4rem 0.4rem; 
+    margin: 1.5rem .5rem 1.5rem .5rem;
+    padding: 1rem 0.4rem 1rem 0.4rem; 
     border: .2rem solid black;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
     border-radius: .4rem;
-}
-
-.mensagem_inicial {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    padding: .6rem;
 }
 
 a{
@@ -59,24 +65,10 @@ a{
     color: black
 }
 
-li.meus{
-    width: 42%;
-    margin: .4rem 0 .4rem 0;
-}
-
-ul.meus{
-    width: 100%;
-    justify-content: space-between;
-}
-
-.borderless{
-    border: none;
-    box-shadow: none;
-    padding: .4rem 0 .4rem 0
-}
-
 .opcoes{
-    height: 60%;
+    height: 50%;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 footer{
@@ -84,6 +76,7 @@ footer{
     bottom: 0;
     text-align: center;
     padding: 0 0 1.5rem 0;
+    font-size: 1rem;
 }
 
 .opcao{
@@ -91,9 +84,52 @@ footer{
     align-self: center;
 }
 
-section{
+.rank{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+li.rank{
+    margin: 1rem 0 1rem 0;
+    padding: .2rem .5rem .2rem .5rem;
+    border: none;
+    box-shadow: none;
+}
+
+p.rank-pos{
+    border: .1rem solid black;
+    padding: 1rem;
+    margin-right: .5rem;
+    font-size: 2rem;
+}
+
+p.rank-name{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: .1rem solid black;
+    padding: 1rem;
+    font-size: 2rem;
     justify-content: center;
-    align-items: center;
+}
+
+.nota{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border: .1rem solid black;
+    padding: 1rem;
+    margin-right: .5rem;
+}
+
+li.nota{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 1rem .5rem 1rem .5rem;
+    padding: .2rem .5rem .2rem .5rem;
+    border: none;
+    box-shadow: none;
 }
