@@ -3,11 +3,20 @@ html, body{
 }
 
 .titulo{
-    font-family: 'Open Sans', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .corpo{
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.bold{
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1{
+    color: #13468b;
 }
 
 header{
@@ -53,16 +62,17 @@ li {
     align-items: center;
     margin: 1.5rem .5rem 1.5rem .5rem;
     padding: 1rem 0.4rem 1rem 0.4rem; 
-    border: .2rem solid black;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+    border: .1rem solid black;
+    box-shadow: 0 10px 10px #a7a8aa;
     border-radius: .4rem;
+    background-color: #1a2675;
 }
 
 a{
     text-decoration: none;
     text-align: center;
     font-size: 2rem;
-    color: black
+    color: white
 }
 
 .opcoes{
@@ -95,10 +105,11 @@ li.rank{
     padding: .2rem .5rem .2rem .5rem;
     border: none;
     box-shadow: none;
+    background-color: white;
 }
 
 p.rank-pos{
-    border: .1rem solid black;
+    border: .2rem solid #a7a8aa;
     padding: 1rem;
     margin-right: .5rem;
     font-size: 2rem;
@@ -108,7 +119,7 @@ p.rank-name{
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: .1rem solid black;
+    border: .2rem solid #a7a8aa;
     padding: 1rem;
     font-size: 2rem;
     justify-content: center;
@@ -118,7 +129,7 @@ p.rank-name{
     display: flex;
     justify-content: center;
     width: 50%;
-    border: .1rem solid black;
+    border: .2rem solid #a7a8aa;
     padding: 1rem;
     margin-right: .5rem;
 }
@@ -131,5 +142,52 @@ li.nota{
     margin: 1rem .5rem 1rem .5rem;
     padding: .2rem .5rem .2rem .5rem;
     border: none;
+    box-shadow: none;
+    background-color: white;
+}
+
+header.tela-user{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; 
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+ul.tela-user{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+li.tela-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 1.2rem;
+}
+
+img.tela-user{
+    width: 10rem;
+    margin-right: 1rem;
+}
+
+h1.notificacao{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+li.notificacao{
+    border: .2rem solid #a7a8aa;
+    background-color: white;
     box-shadow: none;
 }
