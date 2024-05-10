@@ -60,7 +60,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1.5rem .5rem 1.5rem .5rem;
+    margin: 1.5rem .5rem 2rem .5rem;
     padding: 1rem 0.4rem 1rem 0.4rem; 
     border: .1rem solid black;
     box-shadow: 0 10px 10px #a7a8aa;
@@ -78,7 +78,7 @@ a{
 .opcoes{
     height: 50%;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 footer{
@@ -190,4 +190,14 @@ li.notificacao{
     border: .2rem solid #a7a8aa;
     background-color: white;
     box-shadow: none;
+}
+
+.return {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    background-color: #1a2675;
+    margin: 3.5rem 10.5rem;
 }
