@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded',function() {
     buttons = document.querySelectorAll('.button')
     filename = location.href.split("/").slice(-1)
     bar = document.querySelector('.progress')
-    progresso = localStorage.getItem('progresso'+filename)
-    if (progresso === null) {
+    progresso = parseInt(localStorage.getItem('progresso'+filename))
+    if (progresso === null || isNaN(progresso)) {
         progresso = 0
     }
     bar.style.width = progresso + '%'
