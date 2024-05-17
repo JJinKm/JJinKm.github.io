@@ -152,7 +152,8 @@ li.nota{
 header.tela-user{
     border: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 1rem; 
@@ -160,19 +161,11 @@ header.tela-user{
     margin-bottom: 2rem;
 }
 
-ul.tela-user{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
 li.tela-user{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+    width: 100%;
     background-color: white;
     border: none;
     box-shadow: none;
@@ -181,7 +174,6 @@ li.tela-user{
 
 img.tela-user{
     width: 10rem;
-    margin-right: 1rem;
 }
 
 h1.notificacao{
@@ -193,6 +185,14 @@ li.notificacao{
     border: .2rem solid #a7a8aa;
     background-color: white;
     box-shadow: none;
+    width: 90%;
+    font-size: 3.5rem;
+}
+
+ul.notificacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .return {
