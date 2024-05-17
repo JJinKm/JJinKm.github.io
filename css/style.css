@@ -203,8 +203,9 @@ li.notificacao{
 }
 
 li.return {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
 }
 
 div.bar {
