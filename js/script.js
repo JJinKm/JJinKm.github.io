@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',function() {
     filename = location.href.split("/").slice(-1)
     bar = document.querySelector('.progress')
     progresso = parseInt(localStorage.getItem('progresso'+filename))
-    if (progresso === null || isNaN(progresso)) {
+    if (progresso === null || isNaN(progresso) || progresso > 100) {
         progresso = 0
     }
     bar.style.width = progresso + '%'
