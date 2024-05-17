@@ -79,6 +79,7 @@ a{
 .opcoes{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 1.2rem;
 }
 
@@ -222,7 +223,12 @@ div.bar {
 }
 
 .progress {
-    background-color: #13468b;
+    background-color: #a7a8aa;
     width: 0%;
     height: 100%;
+    color: black;
+}
+
+li.single {
+    width: 100%;
 }
