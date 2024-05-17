@@ -16,7 +16,7 @@ html, body{
 }
 
 h1{
-    color: #13468b;
+    color: #1a2675;
 }
 
 header{
@@ -24,8 +24,8 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: .8rem; 
-    font-size: 2rem;
+    padding: 1rem 0.5rem 1rem 0.5rem; 
+    font-size: 2.3rem;
     border-bottom: 0.1rem solid black;
     margin-bottom: 1rem;
 }
@@ -65,7 +65,7 @@ li {
     border: .1rem solid black;
     box-shadow: 0 .3rem .3rem #a7a8aa;
     border-radius: .4rem;
-    background-color: #1a2675;
+    background-color: #13468b;
     width: 50%;
     height: 100%;
 }
@@ -73,11 +73,13 @@ li {
 a{
     text-decoration: none;
     text-align: center;
+    color: white;
 }
 
 .opcoes{
     display: flex;
     flex-direction: row;
+    margin-top: 1.2rem;
 }
 
 footer{
@@ -105,22 +107,23 @@ li.rank{
     border: none;
     box-shadow: none;
     background-color: white;
+    width: 100%;
 }
 
 p.rank-pos{
     border: .2rem solid #a7a8aa;
     padding: 1rem;
     margin-right: .5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 p.rank-name{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 60%;
     border: .2rem solid #a7a8aa;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     justify-content: center;
 }
 
@@ -195,17 +198,21 @@ li.notificacao{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: .1rem solid black;
-    border-radius: 1rem;
-    background-color: #1a2675;
-    margin: 1rem 10.5rem;
+    margin-top: .5rem;
 }
 
-div.videos {
-    margin-left: 1rem;
+li.return {
+    width: 2rem;
+    height: 2rem;
+}
+
+div.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: white;
+    margin: 1rem;
     height: 1rem;
-    width: 5rem;
     border: .2rem solid black;
 }
 

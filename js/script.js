@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    aula = document.querySelector('.videos')
-    a = document.querySelector('#videos')
+    bar = document.querySelector('.progress')
     progresso = localStorage.getItem('progresso')
     if (progresso === null || progresso === 0) {
-        aula.style.backgroundColor = 'white'
+        progresso = 0
+        bar.style.width = progresso + '%'
+        bar.innerHTML = progresso + '%'
     }
 })
